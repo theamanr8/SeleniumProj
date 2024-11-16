@@ -4,4 +4,5 @@ public class xPath {
     static String loginbutton = "//button[@id='login-btn']";
     static String admin = "//a[@href='/admin/']";
     static String subDomain = "qa" ;
+    static String createNew = "//button[@id='create-new-btn']";
 }
