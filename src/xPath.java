@@ -3,5 +3,5 @@ public class xPath {
     static String password = "//input[@id='password']";
     static String loginbutton = "//button[@id='login-btn']";
     static String admin = "//a[@href='/admin/']";
-    static String subDomain = "cloudtest" ;
+    static String subDomain = "qa" ;
 }

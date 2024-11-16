@@ -19,7 +19,7 @@ public class TestUI extends xPath {
         x.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         x.get("https://" + xPath.subDomain + ".serviceops.ai/login");
         //Thread.sleep(2000);
-        x.findElement(By.xpath(xPath.username)).sendKeys("jk");
+        x.findElement(By.xpath(xPath.username)).sendKeys("aman");
         x.findElement(By.xpath(xPath.password)).sendKeys("admin@123");
         x.findElement(By.xpath(xPath.loginbutton)).click();
         // Thread.sleep(3000);
@@ -27,12 +27,13 @@ public class TestUI extends xPath {
         x.navigate().refresh();
         String a = x.getTitle();
         System.out.println(a);
-        if (Objects.equals(a, "TECHNICIAN PORTAL")) {
+        if (Objects.equals(a, "Technician Portal")) {
             System.out.println("Test Passed ✅");
         } else {
             System.out.println("Test Fails");
         }
 
+        new CRUD_HardwareAsset();
         // comment of end of execution
 
 
